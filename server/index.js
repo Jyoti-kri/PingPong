@@ -14,7 +14,7 @@ const { app, server } = require('./socket/socket');
 
 //used by socket.io to connect with the server
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://pingpong-masz.onrender.com",
     credentials:true
 }))
 
