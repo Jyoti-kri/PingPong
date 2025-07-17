@@ -7,7 +7,7 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store.js'  
 
 // export the url which come from backend to send to axios to call the api ---this is the first things to doo before call api
-export const serverURL="http://localhost:5000"
+export const serverURL="https://pingpong-backend-b1is.onrender.com"
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
