@@ -30,8 +30,8 @@ const SignUp=async(req,res)=>{
         httpOnly:true,
         maxAge:30*24*60*1000,
         //sameSite:"None", // not none
-        sameSite:"Strict", // this is used to prevent the cross site request forgery
-        secure:false   //now used http ..when we do true it runs on https
+          sameSite:"None", // this is used to prevent the cross site request forgery
+        secure:true    //now used http ..when we do true it runs on https
     })
     return res.status(201).json(user);
    } catch(error){
@@ -63,8 +63,8 @@ const login=async(req,res)=>{
         httpOnly:true,
         maxAge:30*24*60*1000,
         //sameSite:"None",
-        sameSite:"Strict", // this is used to prevent the cross site request forgery
-        secure:false   //now used http ..when we do true it runs on https
+        sameSite:"None", // this is used to prevent the cross site request forgery
+        secure:true   //now used http ..when we do true it runs on https
     })
     return res.status(201).json(user);
    } catch(error){
